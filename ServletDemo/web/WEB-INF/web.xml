@@ -35,4 +35,20 @@
         <servlet-name>Demo04</servlet-name>
         <url-pattern>/demo04</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>Demo05</servlet-name>
+        <servlet-class>servlets.Demo05</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Demo05</servlet-name>
+        <url-pattern>/demo05</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Demo06</servlet-name>
+        <servlet-class>servlets.Demo06</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Demo06</servlet-name>
+        <url-pattern>/demo06</url-pattern>
+    </servlet-mapping>
 </web-app>

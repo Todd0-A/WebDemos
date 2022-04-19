@@ -1,0 +1,29 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="div_container">
+    <div id="div_fruit_list">
+        <table id="tbl_fruit">
+            <tr>
+                <th class="w20">name</th>
+                <th class="w20">price</th>
+                <th class="w20">count</th>
+                <th>operator</th>
+            </tr>
+            <tr th:if="${#lists.isEmpty(session.fruitList)}">
+                <td colspan="4">The stock is empty!</td>
+            </tr>
+            <tr th:unless="${#lists.isEmpty(session.fruitList)}" th:each = "fruit: ${session.fruitList}">
+                <td th:text="${fruit.fname}">apple</td>
+                <td th:text="${fruit.price}">5</td>
+                <td th:text="${fruit.fcount}">20</td>
+                <td ><img src="imgs/del.jpg" class="delImg"/></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
